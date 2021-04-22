@@ -51,54 +51,64 @@ namespace Q4__inheretence_
             // 
             // colorBox
             // 
-            this.colorBox.Location = new System.Drawing.Point(436, 366);
+            this.colorBox.Location = new System.Drawing.Point(383, 317);
+            this.colorBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.colorBox.Name = "colorBox";
-            this.colorBox.Size = new System.Drawing.Size(150, 27);
+            this.colorBox.Size = new System.Drawing.Size(132, 23);
             this.colorBox.TabIndex = 3;
             // 
             // result
             // 
-            this.result.Location = new System.Drawing.Point(462, 421);
+            this.result.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.result.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.result.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.result.Location = new System.Drawing.Point(382, 372);
+            this.result.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.result.Name = "result";
-            this.result.Size = new System.Drawing.Size(94, 29);
+            this.result.Size = new System.Drawing.Size(130, 40);
             this.result.TabIndex = 4;
             this.result.Text = "קבל מידע";
-            this.result.UseVisualStyleBackColor = true;
+            this.result.UseVisualStyleBackColor = false;
             this.result.Click += new System.EventHandler(this.result_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(608, 131);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(520, 79);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 20);
+            this.label1.Size = new System.Drawing.Size(102, 21);
             this.label1.TabIndex = 5;
-            this.label1.Text = "אורך";
+            this.label1.Text = "אורך (במטר)";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(608, 192);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(519, 141);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 20);
+            this.label2.Size = new System.Drawing.Size(101, 21);
             this.label2.TabIndex = 6;
-            this.label2.Text = "גובה";
+            this.label2.Text = "גובה (במטר)";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(608, 263);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(519, 199);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 20);
+            this.label3.Size = new System.Drawing.Size(102, 21);
             this.label3.TabIndex = 7;
-            this.label3.Text = "רוחב";
+            this.label3.Text = "רוחב (במטר)";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(608, 373);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(533, 323);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 20);
+            this.label4.Size = new System.Drawing.Size(40, 21);
             this.label4.TabIndex = 8;
             this.label4.Text = "צבע";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -106,81 +116,93 @@ namespace Q4__inheretence_
             // screen
             // 
             this.screen.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.screen.Location = new System.Drawing.Point(88, 210);
+            this.screen.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.screen.Location = new System.Drawing.Point(77, 158);
             this.screen.Name = "screen";
-            this.screen.Size = new System.Drawing.Size(229, 123);
+            this.screen.Size = new System.Drawing.Size(200, 123);
             this.screen.TabIndex = 9;
             // 
             // Length
             // 
             this.Length.DecimalPlaces = 1;
-            this.Length.Location = new System.Drawing.Point(436, 129);
+            this.Length.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Length.Location = new System.Drawing.Point(383, 80);
+            this.Length.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Length.Name = "Length";
             this.Length.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Length.Size = new System.Drawing.Size(150, 27);
+            this.Length.Size = new System.Drawing.Size(131, 29);
             this.Length.TabIndex = 10;
+           
             // 
             // height
             // 
             this.height.DecimalPlaces = 1;
-            this.height.Location = new System.Drawing.Point(436, 192);
+            this.height.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.height.Location = new System.Drawing.Point(382, 138);
+            this.height.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.height.Name = "height";
             this.height.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.height.Size = new System.Drawing.Size(150, 27);
+            this.height.Size = new System.Drawing.Size(131, 27);
             this.height.TabIndex = 11;
             // 
             // width
             // 
             this.width.DecimalPlaces = 1;
-            this.width.Location = new System.Drawing.Point(436, 256);
+            this.width.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.width.Location = new System.Drawing.Point(382, 194);
+            this.width.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.width.Name = "width";
             this.width.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.width.Size = new System.Drawing.Size(150, 27);
+            this.width.Size = new System.Drawing.Size(131, 29);
             this.width.TabIndex = 12;
             // 
             // weight
             // 
             this.weight.DecimalPlaces = 1;
-            this.weight.Location = new System.Drawing.Point(436, 313);
+            this.weight.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.weight.Location = new System.Drawing.Point(382, 254);
+            this.weight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.weight.Name = "weight";
             this.weight.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.weight.Size = new System.Drawing.Size(150, 27);
+            this.weight.Size = new System.Drawing.Size(131, 27);
             this.weight.TabIndex = 13;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(608, 320);
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(519, 257);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(49, 20);
+            this.label6.Size = new System.Drawing.Size(107, 21);
             this.label6.TabIndex = 14;
-            this.label6.Text = "משקל";
+            this.label6.Text = "משקל (בק\"ג)";
             // 
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Segoe UI", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(257, 27);
+            this.label5.Location = new System.Drawing.Point(225, 20);
             this.label5.Name = "label5";
             this.label5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label5.Size = new System.Drawing.Size(273, 47);
+            this.label5.Size = new System.Drawing.Size(239, 35);
             this.label5.TabIndex = 15;
             this.label5.Text = "מחשבון לקופסה";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(255, 176);
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(223, 132);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(61, 20);
+            this.label7.Size = new System.Drawing.Size(68, 21);
             this.label7.TabIndex = 16;
             this.label7.Text = "תוצאה  ";
             // 
             // main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(825, 515);
+            this.ClientSize = new System.Drawing.Size(734, 438);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
@@ -195,6 +217,7 @@ namespace Q4__inheretence_
             this.Controls.Add(this.label1);
             this.Controls.Add(this.result);
             this.Controls.Add(this.colorBox);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
